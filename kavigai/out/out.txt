@@ -1,0 +1,51 @@
+##############  CORRECT ONE SHOULD BE SIMILAR TO
+Top 3 recomended templates:
+  1.	goal_template: Pre-Requisites to be an intern
+ 	description: Strong foundation in a category to acheive the successful internship.
+  	price: FREE
+  	category: Internship
+
+  2.	goal_template: To become a Mentor
+  	description: How to become a respectable mentor
+  	price: NOT FREE
+  	category: Career
+
+  3.	goal_template: Nasotech Internship Onboarding
+  	description: This goal is to complete the onboarding process.
+  	price: FREE
+  	category: INTERNSHIP ONBOARDING
+
+
+
+##############  WRONG OUTPUT
+
+Query: intern
+Generated Response:
+
+Here are some relevant documents and resources to help you with your internship goals: ### 1. Pre-Requisites to be an Intern in the IT Field - **Internship Requirements Guide** - Overview of educational background needed (e.g., degree in Computer Science, Information Technology, etc.) - Skills checklist (e.g., programming languages, software proficiency) - Networking and soft skills development - **Resume and Cover Letter Templates** - Customizable templates specifically for IT internships - **Interview Preparation Guide** - Common interview questions for IT internships - Tips on technical interviews and coding assessments ### 2. How to Become a Respectable Mentor - **Mentorship Guide for Professionals** - Best practices for mentoring interns or new employees - Setting clear expectations and goals with mentees - **Effective Communication Techniques** - Strategies for providing constructive feedback - Importance of active listening in a mentoring relationship - **Mentorship Training Programs** - Resources or webinars available for developing mentorship skills ### 3. Nasotech Internship Onboarding - **Onboarding Checklist** - Step-by-step tasks to complete during onboarding - Important documents required (e.g., tax forms, identity verification) - **Company Policy Handbook** - Overview of Nasotech's policies, culture, and values - **Onboarding FAQs** - Common queries related to the onboarding process and whom to contact for assistance ### Additional Resources - **Professional Development Platforms** - Online courses related to IT skills or mentoring development (e.g., LinkedIn Learning, Coursera) - **Networking Opportunities** - Links to professional organizations or online forums for interns to connect with mentors and peers in the IT field. Feel free to reach out for specific documents or additional information on any of these topics!
+Relevant Documents:
+
+    Title:
+    Content:
+    Title:
+    Content:
+    Title:
+    Content:
+
+##############  
+
+[{'_id': ObjectId('670d736167f261a605528dc6'),
+  'goal_template': 'Pre-Requisites to be an intern',
+  'description': 'Strong foundation in a category to acheive the successful internship.',
+  'price': 'FREE',
+  'category': 'Internship'},
+ {'_id': ObjectId('670d736167f261a605528dc9'),
+  'goal_template': 'To become a Mentor',
+  'description': 'How to become a respectable mentor',
+  'price': 'NOT FREE',
+  'category': 'Career'},
+ {'_id': ObjectId('670d736167f261a605528dca'),
+  'goal_template': 'Nasotech Internship Onboarding',
+  'description': 'This goal is to complete the onboarding process.',
+  'price': 'FREE',
+  'category': 'INTERNSHIP ONBOARDING'}]

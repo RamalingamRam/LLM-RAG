@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG System Web Interface</title>
+  </head>
+  <body>
+    <h1>Query-Based Retrieval System</h1>
+
+    <form action="/" method="POST">
+      <label for="query">Enter your query:</label><br />
+      <input
+        type="text"
+        id="query"
+        name="query"
+        placeholder="Ask a question..."
+        style="width: 300px"
+      />
+      <input type="submit" value="Search" />
+    </form>
+
+    <hr />
+
+    {% if query %}
+    <h2>Query: {{ query }}</h2>
+    {% endif %} {% if response %}
+    <h3>Generated Response:</h3>
+    <p>{{ response }}</p>
+    {% endif %} {% if documents %}
+    <h3>Relevant Documents:</h3>
+    <ul>
+      {% for doc in documents %}
+      <li>
+        <strong>Title:</strong> {{ doc['title'] }}<br />
+        <strong>Content:</strong> {{ doc['content'] }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+</html>
