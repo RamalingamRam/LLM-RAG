@@ -18,11 +18,11 @@ client = MongoClient('mongodb://localhost:27017/')
 db = client['kavigai_rag']
 collection = db['goal_templates']
 
-# #### Convert documents in DataFrame to Dictionary and Insert them into the kavigai_rag vector databse
+# #### Convert documents in DataFrame to Dictionary and Insert them into the kavigai_rag vector database
 docu_dict = df.to_dict('records')
 collection.insert_many(docu_dict);
 
-# #### Create embeddings for the documents and Insert them into the kavigai_rag vector databse
+# #### Create embeddings for the documents and Insert them into the kavigai_rag vector database
 from sentence_transformers import SentenceTransformer
 
 # Load a pre-trained embedding model
@@ -32,7 +32,7 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 documents = collection.find()
 goal_templates_embeddings = []
 
-# Generate embeddings and store them in vector databse
+# Generate embeddings and store them in vector database
 for doc in documents:
     goal_template_name = doc.get('goal_template', '') # use get() to avoid error when field is missing
     description = doc['description']  # will be an error when the field is missing
