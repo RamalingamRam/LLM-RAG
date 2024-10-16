@@ -3,9 +3,15 @@ from pymongo import MongoClient
 client = MongoClient('mongodb://localhost:27017/')
 db = client['kavigai_rag']
 collection = db['goal_templates']
+goal_templates_embedding_collection = db['goal_templates_embedding_collection']
 
+##################################################################################################
 from scipy.spatial.distance import cdist
+from sentence_transformers import SentenceTransformer
 import numpy as np
+
+# # Load a pre-trained embedding model
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def retrieve_documents(query, top_k=3):
     # Generate query embedding
@@ -26,8 +32,7 @@ def retrieve_documents(query, top_k=3):
     
     return list(retrieved_docs)
 
-
-
+##################################################################################################
 import os
 import openai
 from openai import OpenAI
@@ -37,7 +42,7 @@ OAIclient = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
-
+##################################################################################################
 # Function to retrieve relevant documents from MongoDB using embeddings
 def generate_response(query, documents):
     # Prepare the prompt for OpenAI
@@ -60,8 +65,11 @@ def generate_response(query, documents):
     )
     return response.choices[0].message.content
 
+##################################################################################################
 # Main route for the web interface
 # Initialize Flask app
+from flask import Flask, render_template, request
+
 app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():

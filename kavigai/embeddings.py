@@ -1,9 +1,6 @@
-import numpy as np
 import pandas as pd
 
-
 df = pd.read_csv('goal_templates.csv')
-
 
 # Clean the documents. 
 # In this case it is remove spaces after commas and lowercase the header
@@ -46,5 +43,5 @@ for doc in documents:
 
 # Insert embeddings into a separate collection
 goal_templates_embedding_collection = db['goal_templates_embeddings']
-# goal_templates_embedding_collection.insert_many(goal_templates_embeddings)
+goal_templates_embedding_collection.insert_many(goal_templates_embeddings)
 print("\nDocument embeddings inserted successfully! {documents}")
