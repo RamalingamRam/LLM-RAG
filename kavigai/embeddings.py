@@ -25,7 +25,7 @@ from sentence_transformers import SentenceTransformer
 # Load a pre-trained embedding model
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-# Retrieve documents from vector databse
+# Retrieve documents from vector database
 documents = collection.find()
 goal_templates_embeddings = []
 
