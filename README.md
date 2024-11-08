@@ -1,4 +1,5 @@
-# Building a secure large volume private data infused AI application using RAG and LLM with Hands-On Project
+# Building a secure large volume private data infused AI application using RAG and LLM with Hands-On Project. [Read the entire article in Medium.com](https://medium.com/@ramjram1/building-a-secure-large-volume-private-data-infused-ai-application-using-rag-and-llm-with-hands-on-375698ece5dc)
+
 
 Artificial Intelligence (AI) has continued to push boundaries and reshape our understanding of what machines can achieve. One of the most exciting advancements in recent years is the GenerativeAI or GenAI. Secure GenAI can be achieved through the combination of Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG). This integration promises to elevate AI’s capabilities, providing more secure, accurate, contextual, and meaningful interactions.
 
@@ -14,4 +15,4 @@ This hybrid approach ensures that the AI can provide more factual and precise an
 
 !![image](https://github.com/user-attachments/assets/1cff530e-40b5-4904-8d9b-3d849cf161c7)
 
-## [Read the entire article](https://medium.com/@ramjram1/building-a-secure-large-volume-private-data-infused-ai-application-using-rag-and-llm-with-hands-on-375698ece5dc)
+## [Read the entire article in Medium.com](https://medium.com/@ramjram1/building-a-secure-large-volume-private-data-infused-ai-application-using-rag-and-llm-with-hands-on-375698ece5dc)
