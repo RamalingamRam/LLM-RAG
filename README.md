@@ -14,4 +14,4 @@ This hybrid approach ensures that the AI can provide more factual and precise an
 
 !![image](https://github.com/user-attachments/assets/1cff530e-40b5-4904-8d9b-3d849cf161c7)
 
-## [Read the entire article] (https://medium.com/@ramjram1/building-a-secure-large-volume-private-data-infused-ai-application-using-rag-and-llm-with-hands-on-375698ece5dc)
+## [Read the entire article](https://medium.com/@ramjram1/building-a-secure-large-volume-private-data-infused-ai-application-using-rag-and-llm-with-hands-on-375698ece5dc)
